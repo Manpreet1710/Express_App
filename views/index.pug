@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Online Tutorials
+    style
+      include ../public/css/style.css
+  body
+div
+  center
+   span #{msg}
+  div
+    nav#navbar
+      ul
+        header
+          a(href="/") 
+            i(class="fas fa-abacus ")
+            img(src="images/6.png" width="50px")
+        li
+          a(href="/") Home
+        li 
+          a(href="#student") Our Students
+        li 
+          a(href="#service") Our Services
+        li 
+          a(href="#contact") Contact us
+
+        div#hamburgerMenu
+         img(src="images/menu.png" id="menu")
+         img(src="images/close.png" id="close")
+    
+    section#section1
+            h1 ONLINE TUTORIALS
+            h3 LEARN WEBDEVELOPMENT FREE 
+      
+    section.section2#student
+       div.heading
+         h1#style Our Students
+            div.container
+              div.stu_img
+                img(src="images/2.png" width="200px" class="same")
+                h5 Mark and Queen
+              div.stu_img
+                img(src="images/3.png" width="200px" class="same")
+                h5 James
+              div.stu_img
+                img(src="images/4.png" width="200px" class="same")
+                h5 Sofia
+              div.stu_img
+                img(src="images/5.png" width="155px" class="same")
+                h5 Ricky
+
+  section.section3#service
+    div.OurServeres
+      h1#style Our Services
+        div.container2
+          div.servcs_img
+            img(src="images/angular.png" )
+          div.servcs_img
+            img(src="images/bootstrap.png")
+          div.servcs_img
+            img(src="images/css3.png" width="50px")
+          div.servcs_img
+            img(src="images/c++1.png"  width="50px")
+          div.servcs_img
+            img(src="images/html5.png"  width="50px")
+          div.servcs_img
+            img(src="images/jquery.png"  width="50px")
+          div.servcs_img
+            img(src="images/js.png"  width="50px")
+          div.servcs_img
+            img(src="images/nodejs.png"  width="50px")
+          div.servcs_img
+            img(src="images/php.png"  width="50px")
+          div.servcs_img
+            img(src="images/python.png"  width="50px")
+          div.servcs_img
+            img(src="images/ruby.png"  width="50px")
+
+  div#contact
+    div.heading
+      h1#style Contact Us
+            form(action="/contact" method="post")
+              input(type="text" placeholder="Enter Your First Name" name='fName' class="form1")
+              input(type="text" placeholder="Enter Your Last Name" name="lName"  class="form1")
+              input(type="text" placeholder="Enter Your Age" name="age"  class="form1")
+              input(type="password" placeholder="Enter Your Password" name="password"  class="form1")
+              textarea(name="message" cols="77" rows="5" placeholder="Message"  class="form1")
+              input(type="submit" id="submit")
+  
+  script(src="js/index.js")
+ 
+  footer#footer
+    p @2020-2021 copyrights by TechnicalRavi
+
+    
+            
+            
+            
