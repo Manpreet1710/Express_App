@@ -2,7 +2,7 @@ console.log("ONLINE TUTORIALS EXPRESS JS WEBSITE");
 // Import Express Module
 const express = require("express");
 const fs = require("fs"); 
-const port = 80; // run On port
+const port = process.env.PORT || 8080; // run On port
 // Calling Express
 const app = express();
 
